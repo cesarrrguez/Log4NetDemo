@@ -12,14 +12,14 @@ namespace Log4NetDemo
             Console.WriteLine("Welcome to Log4NetDemo");
             Console.WriteLine("----------------------\n");
 
-            Log.Info("Entering application");
-
+            Log.Debug("Entering application");
+            
             Log.Info("This is an info message");
             Log.Warn("This is a warning message");
             Log.Error("This is an error message");
             Log.Fatal("This is a fatal message");
 
-            Log.Info("Exiting application");
+            Log.Debug("Exiting application");
 
             Console.WriteLine("\nPress any key to exist");
             Console.ReadKey();
