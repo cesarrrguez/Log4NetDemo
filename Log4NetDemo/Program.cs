@@ -12,17 +12,17 @@ namespace Log4NetDemo
             Console.WriteLine("Welcome to Log4NetDemo");
             Console.WriteLine("----------------------\n");
 
-            //Log.Debug("Entering application");
+            Log.Debug("Entering application");
 
-            //Log.Info("This is an info message");
-            //Log.Warn("This is a warning message");
-            //Log.Error("This is an error message");
-            //Log.Fatal("This is a fatal message");
+            Log.Info("This is an info message");
+            Log.Warn("This is a warning message");
+            Log.Error("This is an error message");
+            Log.Fatal("This is a fatal message");
 
-            //Log.Debug("Exiting application");
+            Log.Debug("Exiting application");
 
-            var simulation = new Simulation();
-            simulation.RunSimulation();
+            //var simulation = new Simulation();
+            //simulation.RunSimulation();
 
             Console.WriteLine("\nPress any key to exist");
             Console.ReadKey();
