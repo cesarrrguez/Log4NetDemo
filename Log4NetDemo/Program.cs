@@ -1,12 +1,14 @@
 ﻿using System;
 using log4net;
+using Log4NetDemo.Util;
 
 namespace Log4NetDemo
 {
     internal class Program
     {
         //private static readonly ILog Log = LogManager.GetLogger(typeof(Program));
-        private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        //private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog Log = LogHelper.GetLogger();
 
         private static void Main()
         {
